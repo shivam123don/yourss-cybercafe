@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>Shivam Typing Center</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background: #f2f2f2; color: #333; }
+    header {
+      background: #0069d9; color: white;
+      padding: 20px; display: flex; align-items: center; gap: 15px;
+    }
+    header img { height: 50px; border-radius: 50%; }
+    nav {
+      background: #0056b3; text-align: center; padding: 10px;
+    }
+    nav a {
+      color: white; text-decoration: none;
+      margin: 0 15px; font-weight: bold;
+    }
+    section {
+      background: white;
+      margin: 20px auto; padding: 30px;
+      max-width: 800px; border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 { color: #007bff; margin-bottom: 15px; }
+    input, select, textarea {
+      width: 100%; padding: 10px; margin-top: 5px;
+      margin-bottom: 15px; border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      background: #28a745; color: white;
+      padding: 10px 15px; border: none;
+      border-radius: 6px; font-weight: bold;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center; padding: 20px;
+      background: #343a40; color: white;
+      font-size: 14px;
+    }
+    .whatsapp-float {
+      position: fixed; bottom: 20px; right: 20px;
+      background: #25D366; color: white;
+      padding: 12px 16px; border-radius: 50px;
+      text-decoration: none; font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .qr-box { text-align: center; margin-top: 20px; }
+    ul li { margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo.jpg" alt="Logo">
+  <h1>Shivam Typing & Govt. Form Services</h1>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#services">Services</a>
+  <a href="#combo">Combo Plans</a>
+  <a href="#payment">Payment</a>
+  <a href="#form">Form</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+  <h2>Welcome! स्वागत है</h2>
+  <p>Typing, Form भरना, Resume बनाना और अन्य सरकारी सेवाएं उपलब्ध हैं।</p>
+</section>
+
+<section id="services">
+  <h2>हमारी सेवाएं / Our Services</h2>
+  <ul>
+    <li>✔️ फॉर्म भरना / Form Filling – ₹30</li>
+    <li>✔️ टाइपिंग (हिंदी/अंग्रेज़ी) / Typing – ₹20 per page</li>
+    <li>✔️ रिज्यूमे बनाना / Resume – ₹50</li>
+    <li>✔️ जाति/आय/निवास प्रमाणपत्र – ₹40</li>
+    <li>✔️ PAN / Aadhaar Update – ₹30</li>
+    <li>✔️ मोबाइल रिचार्ज / टिकट बुकिंग – ₹10 से शुरू</li>
+  </ul>
+</section>
+
+<section id="combo">
+  <h2>कॉम्बो प्लान्स / Combo Plans</h2>
+  <ul>
+    <li>✔️ Typing + Resume = ₹60 (Save ₹10)</li>
+    <li>✔️ Form + Certificate = ₹60 (Save ₹10)</li>
+    <li>✔️ Resume + Certificate + Typing = ₹100 (Save ₹20)</li>
+  </ul>
+</section>
+
+<section id="payment">
+  <h2>Pay ₹30 via UPI</h2>
+  <div class="qr-box">
+    <img src="qr.jpg" alt="QR Code" width="200"><br><br>
+    <strong>UPI ID: shivam@ybl</strong><br>
+    कृपया पेमेंट करने के बाद फॉर्म भरें।
+  </div>
+</section>
+
+<section id="form">
+  <h2>Online Form</h2>
+  <form action="https://formsubmit.co/shivamtiwari57642@email.com" method="POST" enctype="multipart/form-data">
+    <label>नाम:</label>
+    <input type="text" name="name" required>
+
+    <label>मोबाइल नंबर:</label>
+    <input type="tel" name="phone" required>
+
+    <label>सेवा:</label>
+    <select name="service">
+      <option>Typing</option>
+      <option>Form भरना</option>
+      <option>Resume</option>
+      <option>Certificate Apply</option>
+    </select>
+
+    <label>पता (Delivery Address):</label>
+    <textarea name="address" rows="3" required></textarea>
+
+    <label>डॉक्युमेंट अपलोड करें (PDF या इमेज):</label>
+    <input type="file" name="attachment" accept=".pdf,.jpg,.jpeg,.png" required>
+
+    <label>Message:</label>
+    <textarea name="message" rows="4"></textarea>
+
+    <label><input type="checkbox" name="paid" required> मैंने ₹30/- भुगतान कर दिया है</label><br><br>
+
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" value="https://wa.me/919580623314?text=Hi%20Shivam%2C%20I%20have%20submitted%20the%20form%20and%20paid%20Rs%2030.">
+
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>📞 WhatsApp: <strong>+91 9580623314</strong><br>
+  📧 Email: shivamtypingcenter@email.com<br>
+  📍 Location: gonda</p>
+</section>
+
+<a class="whatsapp-float" href="https://wa.me/919580623314" target="_blank">💬 WhatsApp</a>
+
+<footer>
+  &copy; 2025 Shivam Typing Center | Made with ❤️
+</footer>
+
+</body>
+</html>
